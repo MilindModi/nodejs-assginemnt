@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "cfa8f65f-089d-4dec-bb7e-aea0dc7f4911",
+		"name": "task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add customer by admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerName\":\"xyz\",\r\n    \"phone\":\"543211\",\r\n    \"password\":\"12345\",\r\n    \"adminId\" :1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/admin/add/customer/transaction",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"add",
+						"customer",
+						"transaction"
+					],
+					"query": [
+						{
+							"key": "sad",
+							"value": "sddas",
+							"disabled": true
+						},
+						{
+							"key": "fgs",
+							"value": "sdfsd",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "phone",
+							"value": "543211",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/customer/login",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"customer",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add customer by admin transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerName\":\"xyz\",\r\n    \"phone\":\"543211\",\r\n    \"password\":\"12345\",\r\n    \"adminId\" :1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/admin/add/customer/transaction",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"add",
+						"customer",
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

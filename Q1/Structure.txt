@@ -1,0 +1,14 @@
+Admin(
+    adminId int autoincrement,
+    adminName varchar(150),
+    phone varchar(11),
+    password varchar(300)
+)
+
+Customer(
+    customerId int autoincrement,
+    CustomerName varchar(150),
+    phone varchar(11),
+    password varchar(300)
+    adminId varchar(50) foreign references Admin(id)
+)
